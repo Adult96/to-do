@@ -1,0 +1,50 @@
+@value boxRadius,font-size-small,font-size-medium,font-size-large from '../../common/size.css';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1e3e;
+  border-top-left-radius: boxRadius;
+  border-top-right-radius: boxRadius;
+  height: 15%;
+}
+
+.mode,
+.allBtn,
+.activeBtn,
+.completedBtn {
+  background-color: transparent;
+  border: none;
+  font-size: font-size-medium;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mode {
+  margin-left: 1rem;
+  padding: 0;
+  color: white;
+}
+
+.allBtn,
+.activeBtn,
+.completedBtn {
+  background-color: transparent;
+  border: none;
+  font-size: font-size-medium;
+  color: #9d6039;
+  margin: 0.2rem;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+.allBtn:hover,
+.activeBtn:hover,
+.completedBtn:hover {
+  border-bottom: 2px solid white;
+}
+
+.completedBtn {
+  margin-right: 1rem;
+}

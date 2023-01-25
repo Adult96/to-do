@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import ListAll from './components/ListAll';
+import List from './components/List';
 
 function App() {
   return (
     <main className='main'>
-      <ListAll />
+      <List />
     </main>
   );
 }
