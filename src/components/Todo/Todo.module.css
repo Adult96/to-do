@@ -1,0 +1,18 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 700px;
+}
+
+.list.dark {
+  border-radius: 50px;
+  background: #bb6a35;
+  box-shadow: 35px 35px 70px #9f5a2d, -35px -35px 70px #d77a3d;
+}
+
+.list.light {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffffff;
+}

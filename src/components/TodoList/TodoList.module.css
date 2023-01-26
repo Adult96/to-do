@@ -1,0 +1,21 @@
+@value font-size-small,font-size-medium,font-size-large from '../../common/Size.css';
+
+.todoList {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.todoList.dark {
+  color: #f7f6f7;
+  background-color: bb6a35;
+}
+
+.todoList.light {
+  color: #bb6a35;
+  background-color: #e0e0e0;
+}
+
+.list {
+  list-style-type: none;
+}

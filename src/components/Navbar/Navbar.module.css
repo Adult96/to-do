@@ -1,4 +1,4 @@
-@value boxRadius,font-size-small,font-size-medium,font-size-large from '../../common/size.css';
+@value boxRadius,font-size-small,font-size-medium,font-size-large from '../../common/Size.css';
 
 .navbar {
   display: flex;
@@ -8,6 +8,22 @@
   border-top-left-radius: boxRadius;
   border-top-right-radius: boxRadius;
   height: 15%;
+}
+
+.navbar.light {
+  background-color: #e0e0e0;
+}
+
+.navbar.dark {
+  background-color: #bb6a35;
+}
+
+.navbar.light .mode {
+  color: #bb6a35;
+}
+
+.navbar.dark .mode {
+  color: #f7f6f7;
 }
 
 .mode,
@@ -24,7 +40,6 @@
 .mode {
   margin-left: 1rem;
   padding: 0;
-  color: white;
 }
 
 .allBtn,
@@ -33,16 +48,33 @@
   background-color: transparent;
   border: none;
   font-size: font-size-medium;
-  color: #9d6039;
   margin: 0.2rem;
   padding-bottom: 3px;
   border-bottom: 2px solid transparent;
 }
 
-.allBtn:hover,
-.activeBtn:hover,
-.completedBtn:hover {
-  border-bottom: 2px solid white;
+.navbar.light .allBtn,
+.navbar.light .activeBtn,
+.navbar.light .completedBtn {
+  color: #9d6039;
+}
+
+.navbar.dark .allBtn,
+.navbar.dark .activeBtn,
+.navbar.dark .completedBtn {
+  color: #f7f6f7;
+}
+
+.navbar.light .allBtn:hover,
+.navbar.light .activeBtn:hover,
+.navbar.light .completedBtn:hover {
+  border-bottom: 2px solid #bb6a35;
+}
+
+.navbar.dark .allBtn:hover,
+.navbar.dark .activeBtn:hover,
+.navbar.dark .completedBtn:hover {
+  border-bottom: 2px solid #f7f6f7;
 }
 
 .completedBtn {
